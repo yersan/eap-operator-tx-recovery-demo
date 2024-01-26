@@ -5,7 +5,7 @@ metadata:
 spec:
   applicationImage: eap7-app:latest
   #applicationImage: eap7-app-byteman:latest
-  replicas: 1
+  replicas: 2
   storage:
     volumeClaimTemplate:
       spec:
@@ -27,3 +27,5 @@ spec:
     # Is this actually needed?
     - name: TX_RELEASE_DIRECTORY
       value: /home/jboss
+  configMaps:
+  - byteman-configmap

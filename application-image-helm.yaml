@@ -1,5 +1,6 @@
 build:
-  uri: https://github.com/kabir/eap-operator-tx-recovery-demo
+  uri: https://github.com/yersan/eap-operator-tx-recovery-demo
+  ref: JBEAP-24814-second-xa-enabled-wip
   s2i:
     featurePacks:
       - org.jboss.eap:eap-datasources-galleon-pack:7.4.0.GA-redhat-00003
